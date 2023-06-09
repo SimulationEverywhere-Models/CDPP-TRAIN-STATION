@@ -1,0 +1,1 @@
+..\..\..\bin\simu.exe -t0:0:5:0 -osimu.out -eevents.ev

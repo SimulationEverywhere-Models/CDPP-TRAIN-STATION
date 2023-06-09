@@ -1,0 +1,1 @@
+..\..\..\bin\simu.exe -t0:0:8:0 -osimu.out -lmess.log

@@ -1,0 +1,18 @@
+Habia un error: el feedback al distribuidor venia de la cola y 
+no del procesador. Como consecuencia podia pasar que si el procesador
+no estaba listo para procesar un evento, se le comunicara al distribuidor
+que la poblacion de la cola habia bajado cuando en realidad no era asi.
+
+Link : out1@dist in@cola1
+Link : out@cola1 in@proc1
+Link : out@cola1 r1@dist
+Link : out@proc1 r@cola1
+
+Se cambio por:
+
+Link : out1@dist in@cola1
+Link : out@cola1 in@proc1
+Link : out@proc1 r1@dist
+Link : out@proc1 r@cola1
+
+

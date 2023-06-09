@@ -1,0 +1,1 @@
+..\..\..\bin\simu.exe -t0:0:2:0 -osimu.out

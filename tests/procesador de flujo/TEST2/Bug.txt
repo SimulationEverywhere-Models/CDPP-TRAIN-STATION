@@ -1,0 +1,6 @@
+Hay un problema en la definicion del modelo Distribuidor:
+Si no se definen los parametros p1,..,p4 en el modelo
+se obtiene una excepcion y un core dump.
+Los parametros son definidos por default en la clase pero por 
+algun problema se obtiene igualmente un error.
+Esto no sucede en el test1 donde se envia un unico evento.
